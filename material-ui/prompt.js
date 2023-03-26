@@ -1,16 +1,16 @@
 module.exports = {
     prompts: [
-        // {
-        //     name: "ui",
-        //     message: "UI framework:",
-        //     type: "select",
-        //     pageSize: 3,
-        //     choices: [
-        //         { message: "Layout Vertical", name: "vertical" },
-        //         { message: "Layout Horizontal", name: "horizontal" },
-        //     ],
-        //     default: "vertical",
-        // },
+        {
+            name: "ui",
+            message: "UI framework:",
+            type: "select",
+            pageSize: 3,
+            choices: [
+                { message: "Layout Vertical", name: "vertical" },
+                { message: "Layout Horizontal", name: "horizontal" },
+            ],
+            default: "vertical",
+        },
     ],
     ignores: [
         {
