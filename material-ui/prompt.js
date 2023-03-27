@@ -6,8 +6,8 @@ module.exports = {
             type: "select",
             pageSize: 3,
             choices: [
-                { message: "Layout Vertical", name: "vertical" },
-                { message: "Layout Horizontal", name: "horizontal" },
+                { message: "Layout Vertical", name: "layout-vertical" },
+                { message: "Layout Horizontal", name: "layout-horizontal" },
             ],
             default: "vertical",
         },

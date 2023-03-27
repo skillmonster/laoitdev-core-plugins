@@ -11,7 +11,8 @@ function App(): JSX.Element {
     <%- _app.inner.join("\n") %>
     return (
          <%- top.join("\n") %>
-        
+        <>
+        </>
          <%- bottom.join("\n") %>
       );
 
