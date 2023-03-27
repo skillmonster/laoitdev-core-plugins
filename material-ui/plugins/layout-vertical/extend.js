@@ -10,18 +10,6 @@ const base = {
             ],
         ],
     },
-    testSetup: {
-        import: [
-            'import { QueryClient, QueryClientProvider } from "react-query";',
-        ],
-        inner: ["const queryClient = new QueryClient()"],
-        wrapper: [
-            [
-                "<QueryClientProvider client={queryClient}>",
-                "</QueryClientProvider>",
-            ],
-        ],
-    },
 };
 
 module.exports = {
