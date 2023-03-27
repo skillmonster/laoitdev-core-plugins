@@ -7,15 +7,14 @@
 
 
 
-function App() {
-  <%- _app.inner.join("\n") %>
-    return (<>
-        <%- top.join("\n") %>
-
+function App(): JSX.Element {
+    <%- _app.inner.join("\n") %>
+    return (
+         <%- top.join("\n") %>
+        
          <%- bottom.join("\n") %>
-         </>
       );
-}
 
-export default App
+};
 
+export default App;

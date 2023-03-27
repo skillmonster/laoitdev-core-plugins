@@ -6,7 +6,7 @@ const base = {
         inner: [],
         wrapper: [
             [
-                "<Dashboard/>"
+                "<Dashboard>", "</Dashboard>"
             ],
         ],
     },
