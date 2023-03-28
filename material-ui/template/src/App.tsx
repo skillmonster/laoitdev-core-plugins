@@ -1,21 +1,14 @@
-<%- _app.import.join("\n") _%>
+import { ThemeProvider } from '@mui/material/styles';
+import { RouterProvider } from 'react-router-dom';
 
-<%
-    var top = _app.wrapper.map(wrapper => wrapper[0] || "");
-    var bottom = _app.wrapper.map(wrapper => wrapper[1] || "").reverse();
-%>
-
-
-
-function App(): JSX.Element {
-    <%- _app.inner.join("\n") %>
-    return (
-         <%- top.join("\n") %>
-        <>
-        </>
-         <%- bottom.join("\n") %>
-      );
-
-};
+import { theme } from 'ui/components/theme';
+import { router } from 'ui/config/route';
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
+}
 
 export default App;
