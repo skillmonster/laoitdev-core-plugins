@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.format.semicolons": "insert",
+  "javascript.format.semicolons": "insert",
+  "editor.formatOnSave": true,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
+}
