@@ -3,6 +3,7 @@ import { styled, ThemeProvider } from '@mui/material/styles';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import {
   Badge,
+  Hidden,
   IconButton,
   Toolbar as MuiToolbar,
   Typography,
@@ -12,7 +13,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { FC } from 'react';
 import { DefaultProps } from './index';
 
-const drawerWidth: number = 240;
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
 }
@@ -25,8 +25,6 @@ const AppBar = styled(MuiAppBar, {
     duration: theme.transitions.duration.leavingScreen,
   }),
   ...(open && {
-    marginLeft: drawerWidth,
-    width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
@@ -52,7 +50,7 @@ export const Toolbar: FC<DefaultProps> = ({ open, toggleDrawer }) => {
       >
         <MuiToolbar
           sx={{
-            pr: '24px', // keep right padding when drawer closed
+            pr: '24px',
           }}
         >
           <IconButton
@@ -62,7 +60,7 @@ export const Toolbar: FC<DefaultProps> = ({ open, toggleDrawer }) => {
             onClick={toggleDrawer}
             sx={{
               marginRight: '36px',
-              ...(open && { display: 'none' }),
+              mr: 2,
             }}
           >
             <MenuIcon />

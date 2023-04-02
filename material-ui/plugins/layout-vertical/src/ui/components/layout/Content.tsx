@@ -1,7 +1,6 @@
-import { Box, Container, Grid, Paper, Toolbar } from '@mui/material';
+import { Box, Container, Grid, Toolbar } from '@mui/material';
 import { FC } from 'react';
 import { DefaultProps } from '.';
-import Orders from '../Orders';
 
 interface ContentProps extends DefaultProps {
   children?: React.ReactNode;
